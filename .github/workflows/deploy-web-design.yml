@@ -21,19 +21,36 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
           
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          npm run astro telemetry disable
         
       - name: Build site
-        run: npm run build
+        run: |
+          echo "Building for branch: $GITHUB_REF_NAME"
+          npm run build
         env:
           GITHUB_REF_NAME: web-design
-        
+          
+      - name: Debug dist directory
+        run: |
+          ls -la dist || echo "dist directory not found"
+          
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          path: ./dist
+          
+      - name: Upload artifact for debugging
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-contents
           path: dist
+          if-no-files-found: error
 
   deploy:
     needs: build
