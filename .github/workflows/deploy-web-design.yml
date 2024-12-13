@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy Web Design Site
 
 on:
   push:
-    branches: [ main ]
+    branches: [ web-design ]
   workflow_dispatch:
 
 permissions:
@@ -27,6 +27,8 @@ jobs:
         
       - name: Build site
         run: npm run build
+        env:
+          GITHUB_REF_NAME: web-design
         
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -37,7 +39,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-pages-web-design
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages

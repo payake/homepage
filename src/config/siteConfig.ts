@@ -19,7 +19,7 @@ export type SiteConfig = {
       username: 'payake',
       repository: 'homepage',
       branch: 'web-design',
-      basePath: '/homepage/dev'
+      basePath: '/homepage/web-design'
     }
     // Add more versions as needed
   }
