@@ -53,7 +53,7 @@ export const projects = [
 
 // CUSTOMIZE: Update your about me content
 export const aboutMe = {
-  description: `I'm a cybersecurity engineer with 8 years of experience with IT risk management, cybersecurity systems engineering and cyber test and evaluation.
+  description: `I'm a cybersecurity engineer with 8 years of experience in IT risk management, cybersecurity systems engineering and cyber test and evaluation.
     My focus is on creating repeatable processes and deterministic cybersecurity testing solutions.`,
   // Add more sections as needed
 }
