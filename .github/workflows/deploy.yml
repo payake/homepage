@@ -1,13 +1,12 @@
-name: Deploy to GitHub Pages
+# For each branch you want to deploy, create a new workflow file:
+# .github/workflows/deploy-dev.yml
+name: Deploy Development Site
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
   push:
-    branches: [ main ]
-  # Allow you to run this workflow manually from the Actions tab on GitHub.
+    branches: [ web-design ]
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -17,16 +16,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Install, build, and upload your site
+      - uses: actions/checkout@v4
+      - name: Install, build, and upload site
         uses: withastro/action@v1
+        with:
+          path: ./dev # Different output path for development
+          node-version: 18
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-pages-development
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages

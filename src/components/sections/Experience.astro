@@ -1,15 +1,19 @@
 ---
 import Section from '../Section.astro';
+import { experiences } from '../../config/personalInfo';
 ---
 <Section id="experience" title="Experience">
   <div class="space-y-8">
-    <div class="bg-white p-6 rounded-lg shadow-sm border border-content-light">
-      <h3 class="text-lg font-semibold text-primary">Senior Developer</h3>
-      <p class="text-content-medium">Company Name • 2020 - Present</p>
-      <ul class="mt-4 list-disc list-inside text-content-medium">
-        <li>Led development of key features resulting in 30% user growth</li>
-        <li>Mentored junior developers and implemented best practices</li>
-      </ul>
-    </div>
+    {experiences.map(exp => (
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-content-light">
+        <h3 class="text-lg font-semibold text-primary">{exp.title}</h3>
+        <p class="text-content-medium">{exp.company} • {exp.period}</p>
+        <ul class="mt-4 list-disc list-inside text-content-medium">
+          {exp.achievements.map(achievement => (
+            <li>{achievement}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
 </Section>

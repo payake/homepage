@@ -1,5 +1,6 @@
 ---
 import Section from '../Section.astro';
+import { personalInfo } from '../../config/personalInfo';
 ---
 <Section id="contact" title="Get in Touch">
   <div class="text-center">
@@ -7,7 +8,7 @@ import Section from '../Section.astro';
       I'm always open to discussing new opportunities and interesting projects.
     </p>
     <a
-      href="mailto:your.email@example.com"
+      href={`mailto:${personalInfo.email}`}
       class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-light transition-colors"
     >
       Send me an email
