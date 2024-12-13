@@ -43,14 +43,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-          
-      - name: Upload artifact for debugging
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist-contents
-          path: dist
-          if-no-files-found: error
 
   deploy:
     needs: build
