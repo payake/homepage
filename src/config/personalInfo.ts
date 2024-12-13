@@ -29,8 +29,10 @@ export const experiences = [
     company: "Lockheed Martin",
     period: "2017 - Present",
     achievements: [
-      "LCybersecurity design, test and evalaution.",
+      "Cybersecurity design, test and evalaution.",
       "Agile practioner, scrum master and enthusiast in testing & automation",
+      "Risk Management Framework, (RMF) NIST SP 800-53",
+      "Strong understating of Cloud Native Computing Foundation technologies"
       // Add more achievements
     ]
   },
@@ -40,9 +42,10 @@ export const experiences = [
 // CUSTOMIZE: Add your projects here
 export const projects = [
   {
-    title: "Project Name",
-    description: "Brief description of the project and your role in it.",
-    url: "#",
+    title: "Vulnerability Management Reporting",
+    description: "Developed customized Tenable Security Center dashboards to report compliance, prioritize vulnerabilities, and track vulnerability management metrics",
+    customButtonText: 'Explore More about Tenable →',
+    url: "https://www.tenable.com/",
     // Add more project details
   },
   // Add more projects
@@ -50,7 +53,7 @@ export const projects = [
 
 // CUSTOMIZE: Update your about me content
 export const aboutMe = {
-  description: `I'm a cybersecurity engineer with 8 years of experience with IT risk management, cybersecurity test and evaluation, system hardening and GRC.
+  description: `I'm a cybersecurity engineer with 8 years of experience with IT risk management, cybersecurity systems engineering and cyber test and evaluation.
     My focus is on creating repeatable processes and deterministic cybersecurity testing solutions.`,
   // Add more sections as needed
 }

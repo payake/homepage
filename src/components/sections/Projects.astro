@@ -11,7 +11,9 @@ import { projects } from '../../config/personalInfo';
           {project.description}
         </p>
         <div class="mt-4">
-          <a href={project.url} class="text-primary-light hover:text-primary transition-colors">View Project →</a>
+          <a href={project.url} class="text-primary-light hover:text-primary transition-colors">
+            {project.customButtonText || 'View Project →'}
+          </a>
         </div>
       </div>
     ))}
