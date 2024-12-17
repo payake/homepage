@@ -2,7 +2,7 @@
 export const personalInfo = {
   name: "Peter Yake",
   title: "Cybersecurity Engineer",
-  tagline: "Cybersecurity Engineer | Lockheed Martin | CISSP, Security+ Certified | Penn State Alumnus",
+  tagline: "| Lockheed Martin | IT & Security Infrastructure | Risk Management | CISSP, Security+ Certified | Penn State Alumnus",
   githubUrl: "https://github.com/payake",
   linkedinUrl: "https://www.linkedin.com/in/peter-yake-5b7463b0/",
 }
