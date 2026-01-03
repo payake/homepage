@@ -36,7 +36,17 @@ export const experiences = [
       // Add more achievements
     ]
   },
-  // Add more experiences
+  {
+    title: "DevSecOps Engineer",
+    company: "Lockheed Martin",
+    period: "2024 - Present",
+    achievements: [
+      "US Department of Labor – DevSecOps Engineer Apprenticeship Graduate",
+      "Infrastrcuture setup with RHEL Kernel-Based Virtual Machines, RKE2 and Container Orchestration.",
+      "Kubernetes & Helm: lifecycle management, application deployment, upgrades and chart maintenance."
+      // Add more achievements
+    ]
+  }
 ]
 
 // CUSTOMIZE: Add your projects here
