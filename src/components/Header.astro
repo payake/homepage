@@ -1,8 +1,9 @@
 ---
+import { personalInfo } from '../config/personalInfo';
 ---
 <header class="py-4 px-6 bg-white shadow-sm border-b border-content-light">
   <nav class="max-w-4xl mx-auto flex justify-between items-center">
-    <a href="/" class="text-xl font-semibold text-primary">Your Name</a>
+    <a href="/" class="text-xl font-semibold text-primary">{personalInfo.name}</a>
     <div class="space-x-6">
       <a href="#about" class="text-content-medium hover:text-primary transition-colors">About</a>
       <a href="#experience" class="text-content-medium hover:text-primary transition-colors">Experience</a>
