@@ -89,7 +89,7 @@ export const projects = [
 
 // CUSTOMIZE: Update your about me content
 export const aboutMe = {
-  description: `Cybersecurity engineer with 8+ years of experience in security engineering, risk management, and DevSecOps within high-assurance environments.
+  description: `Cybersecurity engineer with 9 years of experience in security engineering, risk management, and DevSecOps within high-assurance environments.
 
 I specialize in integrating security into system design and development workflows, with a focus on automation, vulnerability management, and scalable security testing. My work centers on building repeatable, measurable security processes that improve visibility, reduce risk, and enable faster delivery.
 
