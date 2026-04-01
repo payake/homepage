@@ -3,15 +3,20 @@ import Section from '../Section.astro';
 import { personalInfo } from '../../config/personalInfo';
 ---
 <Section id="contact" title="Get in Touch">
-  <div class="text-center">
-    <p class="text-content-medium mb-6">
+  <div class="text-center max-w-lg mx-auto">
+    
+    <p class="text-content-medium mb-8 text-lg leading-relaxed">
       I'm always open to discussing new opportunities and interesting projects.
     </p>
+
     <a
       href={personalInfo.linkedinUrl}
-      class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-light transition-colors mt-4"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block bg-primary text-white px-8 py-3 rounded-xl font-medium shadow-sm hover:shadow-md hover:bg-primary-light transition-all duration-200"
     >
       Message me on LinkedIn →
     </a>
+
   </div>
 </Section>

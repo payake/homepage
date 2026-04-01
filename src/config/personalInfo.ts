@@ -7,6 +7,21 @@ export const personalInfo = {
   linkedinUrl: "https://www.linkedin.com/in/peter-yake-5b7463b0/",
 }
 
+// CUSTOMIZE: Add your social media links here
+export const socialLinks = [
+  {
+    platform: "GitHub",
+    url: "https://github.com/payake",
+    icon: "📦"
+  },
+  {
+    platform: "LinkedIn",
+    url: "https://www.linkedin.com/in/peter-yake-5b7463b0/",
+    icon: "💼"
+  },
+  // Add more social links as needed
+]
+
 // CUSTOMIZE: Add your work experience here
 export const experiences = [
   {
@@ -14,13 +29,13 @@ export const experiences = [
     company: "Lockheed Martin",
     period: "2017 - Present",
     achievements: [
-      "Lead cybersecurity engineering, test, and evaluation efforts for mission-critical systems supporting federal programs.",
-      "Drive Risk Management Framework (RMF) compliance aligned to NIST SP 800-53, enabling system authorization and continuous monitoring.",
-      "Develop and execute security test plans, vulnerability assessments, and risk-based remediation strategies.",
-      "Collaborate cross-functionally with developers, system engineers, and stakeholders to integrate security into system design (shift-left security).",
-      "Implement automation and repeatable processes to improve efficiency and consistency in security validation and reporting.",
-      "Agile practitioner and Scrum Master with experience leading iterative delivery and security-focused development workflows.",
-      "Apply cloud-native and CNCF ecosystem knowledge to support modern infrastructure and secure system architectures."
+      "Lead cybersecurity engineering, test, and evaluation efforts for mission-critical systems.",
+      "Drive Risk Management Framework (RMF) compliance aligned to NIST SP 800-53.",
+      "Develop and execute security test plans, vulnerability assessments, and remediation strategies.",
+      "Collaborate with developers, system engineers, and stakeholders to integrate security into system design.",
+      "Implement automation and repeatable processes to improve efficiency in security validation and reporting.",
+      "Agile practitioner and Scrum Master with experience leading security-focused development workflows.",
+      "Apply cloud-native and CNCF ecosystem knowledge to support modern and secure system architectures."
     ]
   },
   {
@@ -28,11 +43,10 @@ export const experiences = [
     company: "Lockheed Martin",
     period: "2024 - Present",
     achievements: [
-      "Graduate of U.S. Department of Labor DevSecOps Apprenticeship, focused on modern secure software delivery practices.",
-      "Design and implement secure infrastructure using RHEL-based KVM, RKE2 Kubernetes, and containerized environments.",
-      "Manage Kubernetes application lifecycle using Helm, including deployments, upgrades, and configuration management.",
-      "Integrate security into CI/CD pipelines, enabling automated scanning, compliance checks, and secure release workflows.",
-      "Support platform engineering efforts to improve developer velocity while maintaining strong security controls."
+      "Graduate of U.S. Department of Labor DevSecOps Apprenticeship.",
+      "Design and implement secure infrastructure using RHEL-based KVM and RKE2 Kubernetes.",
+      "Manage Kubernetes application lifecycle using Helm, including deployments, upgrades.",
+      "Integrate security into CI/CD pipelines, enabling automated scanning and RMF focused compliance reporting.",
     ]
   }
 ]
@@ -49,7 +63,9 @@ export const projects = [
   },
   {
     title: "Cyber Test & Evaluation for Space Systems",
-    description: "Contributed to cybersecurity test and evaluation efforts supporting space-based systems, including GPS satellite programs. Applied structured Cyber T&E methodologies to assess system resilience against evolving threats, aligning with Lockheed Martin’s approach to end-to-end cybersecurity validation across mission-critical platforms. Supported identification of vulnerabilities, validation of security controls, and mission assurance for space-based positioning, navigation, and timing (PNT) capabilities.",
+    description: "Contributed to cybersecurity test and evaluation efforts supporting space-based systems, including GPS satellite program.",
+    customButtonText: "Explore Lockheed Martin's GPS Legacy →",
+    url: "https://www.lockheedmartin.com/en-us/products/gps.html"
   },
   {
     title: "Vulnerability Management & Risk Reporting Platform",
