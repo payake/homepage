@@ -3,9 +3,9 @@ import Section from '../Section.astro';
 import { experiences } from '../../config/personalInfo';
 ---
 <Section id="experience" title="Experience">
-  <div class="space-y-8">
+  <div class="space-y-4">
     {experiences.map(exp => (
-      <div class="bg-white p-6 rounded-lg shadow-sm border border-content-light">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-content-light text-left leading-relaxed">
         <h3 class="text-lg font-semibold text-primary">{exp.title}</h3>
         <p class="text-content-medium">{exp.company} • {exp.period}</p>
         <ul class="mt-4 list-disc list-inside text-content-medium">
